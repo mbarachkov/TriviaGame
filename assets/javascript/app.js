@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    start_timer();
-    function start_timer() {
-        var seconds_left = 120;
-        document.getElementById('timer').innerHTML = seconds_left;
+    timer();
+    function timer() {
+        var seconds = 120;
+        document.getElementById('timer').innerHTML = seconds;
         var interval = setInterval(function () {
-            document.getElementById('timer').innerHTML = --seconds_left;
-            if (seconds_left == 0) {
+            document.getElementById('timer').innerHTML = --seconds;
+            if (seconds == 0) {
                 onSubmit();
                 clearInterval(interval);
             }

@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
     <title>Trivia Game</title>
 </head>
+
 <body>
     <div class="header">
         <h1>Boat Trivia!</h1>
+    </div>
+    <div class="body">
         <div class="results">
-            <h2>Your Score: </h2>
+            <form name="quiz" onsubmit="return onSubmit()">
+                <div class="question">
+                    <h1>What is the very front of the boat called?</h1>
+                    <input type="radio" name="q1" value="a">a. Stern <br>
+                    <input type="radio" name="q1" value="b">b. Bow <br>
+                    <input type="radio" name="q1" value="c">c. Transom <br>
+                    <input type="radio" name="q1" value="d">d. Gunnels <br>
+                </div>
+                <div class="question">
+                    <h1>When not at the dock, what holds a boat from moving?</h1>
+                    <input type="radio" name="q2" value="a">a. Danforth <br>
+                    <input type="radio" name="q2" value="b">b. Bruce <br>
+                    <input type="radio" name="q2" value="c">c. Anchor <br>
+                    <input type="radio" name="q2" value="d">d. Stockless <br>
+                </div>
+                <div class="question">
+                    <h1>What do 5 short blasts of the horn mean?</h1>
+                    <input type="radio" name="q3" value="a">a. danger/doubt <br>
+                    <input type="radio" name="q3" value="b">b. I plan on leaving you on your port side <br>
+                    <input type="radio" name="q3" value="c">c. I plan on leaving you on your starboard side <br>
+                    <input type="radio" name="q3" value="d">d. Hey buddy! <br>
+                </div>
+                <div class="question">
+                    <h1>What is a skiff?</h1>
+                    <input type="radio" name="q4" value="a">a. Fishing boat <br>
+                    <input type="radio" name="q4" value="b">b. Military Ship <br>
+                    <input type="radio" name="q4" value="c">c. Small boat <br>
+                    <input type="radio" name="q4" value="d">d. Oil tanker <br>
+                </div>
+                <div class="question">
+                    <h1>Which is not a boat manufacturer?</h1>
+                    <input type="radio" name="q5" value="a">a. Boston Whaler <br>
+                    <input type="radio" name="q5" value="b">b. Salas Yachts <br>
+                    <input type="radio" name="q5" value="c">c. Delta Boatworks <br>
+                    <input type="radio" name="q5" value="d">d. Ditmar/Donaldson <br>
+                </div>
+                <br><button type="submit">submit</button>
+            </form>
         </div>
     </div>
-    <div class="Quiz">
-        <form name="quiz" onsubmit="return onSubmit()">
-            <div class="question">
-                <h1>What is the very front of the boat called?</h1>
-                <input type="radio" name="q1" value="a">a. Stern <br>
-                <input type="radio" name="q1" value="b">b. Bow <br>
-                <input type="radio" name="q1" value="c">c. Transom <br>
-                <input type="radio" name="q1" value="d">d. Gunnels <br>
-            </div>
-       
-            <button type="submit">submit test</button>
-        </form>
-    </div>
 
 
-    
-    <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>

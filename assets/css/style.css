@@ -1,0 +1,13 @@
+.header{
+    text-align: center;
+}
+.question {
+    border: solid lightskyblue 4px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submit {
+    margin: 0 auto;
+}
